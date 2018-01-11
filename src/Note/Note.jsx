@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Note.css';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 class Note extends Component{
     constructor(props){
@@ -18,7 +18,7 @@ class Note extends Component{
     }
 }
 
-Note.PropTypes={
+Note.propTypes={
     //NoteContent=PropTypes.string
 }
 
