@@ -1,4 +1,4 @@
- var config = {
+ export const DB_CONFIG = {
     apiKey: "AIzaSyCFXETEX-Dz44d5LVFpeM75nXf3fpxcPDs",
     authDomain: "reactnotes-f0ad3.firebaseapp.com",
     databaseURL: "https://reactnotes-f0ad3.firebaseio.com",

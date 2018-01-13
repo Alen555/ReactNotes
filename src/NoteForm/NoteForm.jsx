@@ -9,6 +9,7 @@ class NoteForm extends Component{
         this.state={
             newNoteContent:'',
         };
+
         this.handleUserInput=this.handleUserInput.bind(this);
         this.writeNote=this.writeNote.bind(this);
     }
@@ -20,20 +21,12 @@ class NoteForm extends Component{
     }
 
     writeNote(){
-        this.addNote(this.state.newNoteContent);
+        this.props.addNote(this.state.newNoteContent)
         this.setState({
             newNoteContent:'',
         })
     }
 
-    addNote(note){
-        const previousNotes=this.state.notes;
-        previousNotes.push({id:previousNotes.length+1, noteContent:note});
-    
-        this.setState({
-          notes: previousNotes
-        });
-      }
 
     render(){
         return(
